@@ -1,0 +1,14 @@
+# Gestiona llamadas a elementos públicos
+<IfModule mod_rewrite.c>
+# Elimina la posibilidad de error con Multiviews (no envía ficheros alternativos)
+Options -Multiviews
+# Activa el motor de redirección
+RewriteEngine on
+# Especifica el prefijo raiz de las reglas
+RewriteBase /public
+# Reglas: Si no se solicita un directorio o un fichero...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+# ... reenvía a index, pasando la URL como argumento. Añade la query original al final [SQA] y finaliza [L | Last] 
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>

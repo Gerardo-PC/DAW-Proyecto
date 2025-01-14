@@ -1,0 +1,9 @@
+# Reenvía a directorio public
+<IfModule mod_rewrite.c>
+# Activa el "motor" de redirección
+RewriteEngine on
+# Redirige solicitudes vacias a public - y acaba el proceso [L | Last]
+RewriteRule ^$ public/ [L]
+# Si existe contenido lo envía a public con el contenido pasado - y acaba el proceso [L | Last]
+RewriteRule (.*) public/$1 [L]
+</IfModule>

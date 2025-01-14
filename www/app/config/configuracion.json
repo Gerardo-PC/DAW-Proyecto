@@ -1,0 +1,8 @@
+{
+    "db":{
+        "usuario":"root",
+        "pass":"test",
+        "servidor":"192.168.100.101:3306",
+        "basedatos":"webdoc"
+    }
+}

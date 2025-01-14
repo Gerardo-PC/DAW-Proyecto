@@ -1,0 +1,74 @@
+/* CSS HEX */
+:root{
+    --casablanca: #edae49;
+    --mandy: #d1495b;
+    --blue-lagoon: #00798c;
+    --bahama-blue: #30638e;
+    --astronaut-blue: #003d5b;
+}
+html,body,main{
+    width: 100%;
+    min-height: 80%;
+    margin:0%;
+}
+
+#contenedor{
+    margin:0% 20% auto 20%;
+}
+
+body *{
+    color: var(--astronaut-blue);
+    font-family: "Roboto", sans-serif;
+}
+
+body h1,body h2, body h3, body h4{    
+    font-family: "Arvo", serif;
+    font-weight: 300;
+}
+
+a{
+    color:var(--blue-lagoon);
+}
+
+/* ==================== GENERAL ====================*/
+h1,h2,h3{
+    text-align: center;
+}
+.msgerror{
+    color:var(--mandy);
+}
+.msgOK{
+    color:var(--blue-lagoon);
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    font-size: large;
+}
+li{
+    margin: 1rem;
+}
+p{
+    margin:1rem;
+    text-align: justify;
+}
+
+/* ==================== BOTON ACCESO ====================*/
+
+#contenedorBoton{
+    text-align: center;
+    padding: 1rem;
+}
+#btnAcceso{
+    margin:auto;
+    text-align: center;
+    padding:0.5rem;
+    font-size: larger;
+    text-decoration: none;
+    border:solid .15rem var(--blue-lagoon);
+    border-radius: .5rem;
+}
+#btnAcceso:hover{
+    background-color: var(--casablanca);
+}
+
+

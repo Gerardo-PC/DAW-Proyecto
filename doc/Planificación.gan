@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="DAW-Gerardo" company="IES San Clemente" webLink="https://gitlab.iessanclemente.net/dawd/a22gerardopc" view-date="2024-09-23" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="es_ES">
+    <description>
+        <![CDATA[Diagrama de tiempos estimados proyecto DAW - Gerardo Portugués Concepción]]>
+    </description>
+    <view zooming-state="default:5" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="200" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="75" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="75" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[12]]>
+        </timeline>
+        <option id="color.recent">
+            <![CDATA[#999999 #ff0033]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" name="Análisis" color="#999999" meeting="false" start="2024-09-26" duration="16" complete="0" thirdDate="2024-10-05" thirdDate-constraint="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <task id="3" name="Idea" meeting="false" start="2024-09-26" duration="9" complete="0" expand="true">
+                <depend id="24" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" name="Validación idea" color="#8cb6ce" meeting="true" start="2024-10-04" duration="0" complete="0" thirdDate="2024-10-04" thirdDate-constraint="1" expand="true"/>
+            <task id="24" name="Análisis y planificación" color="#8cb6ce" meeting="false" start="2024-10-05" duration="7" complete="0" thirdDate="2024-09-09" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Recursos necesarios
+Planificación
+Requisitos funcionales y no funcionales
+Análisis riesgos
+Análisis viabilidad, comercialización, etc.
+Actividades a realizar...]]>
+                </notes>
+            </task>
+        </task>
+        <task id="10" name="Validación Anteproyecto" color="#ff0033" meeting="true" start="2024-10-13" duration="0" complete="0" thirdDate="2024-10-13" thirdDate-constraint="1" priority="4" expand="true"/>
+        <task id="7" name="Diseño" color="#999999" meeting="false" start="2024-10-12" duration="13" complete="0" thirdDate="2024-10-12" thirdDate-constraint="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+            <task id="13" name="Diagrama casos de uso" color="#8cb6ce" meeting="false" start="2024-10-12" duration="3" complete="0" thirdDate="2024-09-22" thirdDate-constraint="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" name="Modelo conceptual" color="#8cb6ce" meeting="false" start="2024-10-15" duration="5" complete="0" thirdDate="2024-09-22" thirdDate-constraint="0" expand="true">
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" name="Modelos BBDD" color="#8cb6ce" meeting="false" start="2024-10-20" duration="5" complete="0" thirdDate="2024-09-22" thirdDate-constraint="0" expand="true"/>
+            <task id="16" name="Diagrama despliegue componentes" color="#8cb6ce" meeting="false" start="2024-10-12" duration="5" complete="0" thirdDate="2024-09-22" thirdDate-constraint="0" expand="true">
+                <depend id="17" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="8" name="Codificación" color="#999999" meeting="false" start="2024-10-25" duration="49" complete="0" thirdDate="2024-10-25" thirdDate-constraint="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+            <task id="18" name="Codificación elementos básicos" color="#8cb6ce" meeting="false" start="2024-10-25" duration="14" complete="0" thirdDate="2024-10-25" thirdDate-constraint="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="Codificación completa funcionalidades" color="#8cb6ce" meeting="false" start="2024-11-08" duration="21" complete="0" thirdDate="2024-11-08" thirdDate-constraint="0" expand="true">
+                <notes>
+                    <![CDATA[Funcionalidades básicas de diseño]]>
+                </notes>
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" name="Codificación instalador" color="#8cb6ce" meeting="false" start="2024-11-29" duration="7" complete="0" thirdDate="2024-11-29" thirdDate-constraint="0" expand="true"/>
+            <task id="21" name="Corrección errores, revisiones, mejoras" color="#8cb6ce" meeting="false" start="2024-11-29" duration="14" complete="0" thirdDate="2024-10-31" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="17" name="Alta entorno desarrollo" color="#8cb6ce" meeting="false" start="2024-10-17" duration="7" complete="0" thirdDate="2024-09-22" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Contenedores, repositorio, etc.]]>
+            </notes>
+        </task>
+        <task id="9" name="Pruebas" color="#8cb6ce" meeting="false" start="2024-11-08" duration="35" complete="0" thirdDate="2024-11-08" thirdDate-constraint="0" expand="true"/>
+        <task id="22" name="Documentación final, entregables" color="#8cb6ce" meeting="false" start="2024-11-29" duration="14" complete="0" thirdDate="2024-11-29" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="Entrega" color="#ff0033" meeting="true" start="2024-12-15" duration="0" complete="0" thirdDate="2024-12-15" thirdDate-constraint="1" priority="2" expand="true">
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" name="Preparación defensa" color="#8cb6ce" meeting="false" start="2024-12-15" duration="3" complete="0" thirdDate="2024-12-15" thirdDate-constraint="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="Defensa" color="#ff0033" meeting="true" start="2024-12-18" duration="0" complete="0" thirdDate="2024-12-18" thirdDate-constraint="1" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

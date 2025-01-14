@@ -1,0 +1,50 @@
+services:
+  www:
+    build: .
+    ports: 
+      - "80:80"
+    volumes:
+      - ./www:/var/www/html
+      - ./docker_conf/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./docker_conf/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+      - ./docker_localfiles:/local_files
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  db:
+    image: mysql:9.0.1
+    ports: 
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: dbname
+      MYSQL_PASSWORD: test
+      MYSQL_ROOT_PASSWORD: test
+    volumes:
+      - ./docker_dump:/docker-entrypoint-initdb.d
+      - ./docker_conf:/etc/mysql/conf.d
+      - persistent:/var/lib/mysql
+    networks:
+      - default
+#  phpmyadmin:
+#    image: phpmyadmin/phpmyadmin:latest
+#    depends_on: 
+#      - db
+#    links: 
+#      - db:db
+#    ports:
+#      - 8000:80
+#    environment:
+#      MYSQL_USER: root
+#      MYSQL_PASSWORD: test
+#      MYSQL_ROOT_PASSWORD: test 
+#  samba:
+#    image: dockurr/samba
+#    container_name: samba
+#    environment:
+#      USER: "samba"
+#      PASS: "secret"
+#    ports:
+#      - 445:445
+#    volumes:
+#      - ./docker_smb:/storage
+volumes:
+  persistent:
